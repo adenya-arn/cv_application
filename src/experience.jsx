@@ -18,7 +18,7 @@ export default function Experience({
       <h3>Experience</h3>
 
       {experienceList.map((exp, index) => (
-        <div key={exp.id}>
+        <div key={exp.id} className="card">
           {exp.isEditing ? (
             <>
               <input

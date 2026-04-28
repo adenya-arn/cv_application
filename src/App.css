@@ -1,4 +1,4 @@
-.app {
+/* .app {
   display: flex;
   gap: 2rem;
   padding: 20px;
@@ -75,4 +75,130 @@ button:last-child {
 
 button:last-child:hover {
   background: #a71d2a;
+} */
+
+
+/* hyfdyhfuwuyhfuiacfuaSIHviaevghvguvgurehvu */
+
+
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* MAIN APP LAYOUT */
+.app {
+  display: flex;
+  gap: 2rem;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+}
+
+/* FORM SIDE */
+.form-section {
+  flex: 1;
+}
+
+.form-section input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-section label {
+  font-weight: bold;
+}
+
+.form-section button {
+  padding: 8px 14px;
+  margin: 5px 5px 10px 0;
+  border: none;
+  border-radius: 6px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.form-section button:hover {
+  background: #0056b3;
+}
+
+/* CARD STYLE (education & experience entries) */
+.card {
+  border: 1px solid #ddd;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  background: white;
+}
+
+/* PREVIEW SIDE */
+.preview-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* CV CONTAINER */
+.cv {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-height: 90vh;
+}
+
+/* LEFT SIDEBAR */
+.cv-left {
+  width: 35%;
+  background: #1e293b;
+  color: white;
+  padding: 20px;
+}
+
+.cv-left h2 {
+  margin-bottom: 10px;
+}
+
+.cv-left p {
+  font-size: 14px;
+  margin-bottom: 6px;
+  word-break: break-word;
+}
+
+/* RIGHT CONTENT */
+.cv-right {
+  width: 65%;
+  padding: 20px;
+}
+
+/* SECTION TITLES */
+.cv-right h3 {
+  border-bottom: 2px solid #1e293b;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  color: #1e293b;
+}
+
+/* ITEMS */
+.cv-item {
+  margin-bottom: 15px;
+}
+
+.cv-item .title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.cv-item .date {
+  font-size: 12px;
+  color: gray;
 }

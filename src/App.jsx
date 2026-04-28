@@ -115,34 +115,38 @@ function App() {
     );
   };
   return (
-    <>
-      <GeneralInfo
-        generalInfo={generalInfo}
-        setGeneralInfo={setGeneralInfo}
-        isEditing={isEditing}
-        setIsEditing={setIsEditing}
-      />
-      <Education
-        educationList={educationList}
-        setEducationList={setEducationList}
-        addEducation={addEducation}
-        handleDelete={handleDelete}
-        toggleEdit={toggleEdit}
-      />
-      <Experience
-        experienceList={experienceList}
-        setExperienceList={setExperienceList}
-        addExperience={addExperience}
-        deleteExperience={deleteExperience}
-        toggleExperienceEdit={toggleExperienceEdit}
-      />
+    <div className="app">
+      <div className="form-section">
+        <GeneralInfo
+          generalInfo={generalInfo}
+          setGeneralInfo={setGeneralInfo}
+          isEditing={isEditing}
+          setIsEditing={setIsEditing}
+        />
+        <Education
+          educationList={educationList}
+          setEducationList={setEducationList}
+          addEducation={addEducation}
+          handleDelete={handleDelete}
+          toggleEdit={toggleEdit}
+        />
+        <Experience
+          experienceList={experienceList}
+          setExperienceList={setExperienceList}
+          addExperience={addExperience}
+          deleteExperience={deleteExperience}
+          toggleExperienceEdit={toggleExperienceEdit}
+        />
+      </div>
 
-      <CvPreview
-        generalInfo={generalInfo}
-        educationList={educationList}
-        experienceList={experienceList}
-      />
-    </>
+      <div className="preview-section">
+        <CvPreview
+          generalInfo={generalInfo}
+          educationList={educationList}
+          experienceList={experienceList}
+        />
+      </div>
+    </div>
   );
 }
 

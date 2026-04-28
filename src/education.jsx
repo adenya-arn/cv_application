@@ -17,7 +17,7 @@ export default function Education({
     <div>
       <h3>Education</h3>
       {educationList.map((edu, index) => (
-        <div key={edu.id}>
+        <div key={edu.id} className="card">
           {edu.isEditing ? (
             <>
               <label htmlFor="school">School</label>
